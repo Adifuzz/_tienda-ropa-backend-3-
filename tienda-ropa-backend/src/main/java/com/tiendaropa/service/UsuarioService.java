@@ -21,6 +21,10 @@ public class UsuarioService {
             throw new RuntimeException("El email ya está registrado");
         }
         
+        if (usuario.getRol() == null || usuario.getRol().isEmpty()) {
+        usuario.setRol("USER"); 
+        }
+
         // Establecer fecha de registro
         usuario.setFechaRegistro(LocalDateTime.now());
         usuario.setActivo(true);

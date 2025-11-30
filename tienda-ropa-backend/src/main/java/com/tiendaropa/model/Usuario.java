@@ -34,4 +34,9 @@ public class Usuario {
     
     @Column(name = "activo")
     private Boolean activo = true;
+
+    @Column(name = "rol", length = 20)
+    private String rol;
+
+    
 }

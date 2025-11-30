@@ -33,8 +33,13 @@ public class Producto {
     
     @Column(name = "imagen_url", length = 255)
     private String imagenUrl;
+
+    @Column(name = "genero", length = 20)
+    private String genero;
     
     @ManyToOne
     @JoinColumn(name = "id_categoria")
     private Categoria categoria;
+
+
 }

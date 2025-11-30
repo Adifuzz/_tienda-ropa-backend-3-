@@ -25,6 +25,13 @@ public class ProductoService {
     
     // Guardar un nuevo producto o actualizar existente
     public Producto guardarProducto(Producto producto) {
+
+        if (producto.getPrecio() < 0) {
+            throw new RuntimeException("El precio no puede ser negativo");
+        }
+        if (producto.getStock() < 0) {
+         throw new RuntimeException("El stock no puede ser negativo");
+        }
         return productoRepository.save(producto);
     }
     
