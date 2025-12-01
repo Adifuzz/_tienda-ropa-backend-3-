@@ -36,9 +36,9 @@ Antes de ejecutar este proyecto, asegúrate de tener instalado:
     ('Accesorios', 'Complementos deportivos'),
     ('Training', 'Equipamiento de entrenamiento');
 
-    -- Usuario Admin (Pass: admin123)
+    -- Usuario Admin (Pass: 1234567)
     INSERT INTO usuarios (nombre_completo, email, password, rol, activo, fecha_registro) 
-    VALUES ('Super Admin', 'admin@ropaplus.com', 'admin123', 'ADMIN', 1, NOW());
+    VALUES ('Super Admin', 'admin@ropaplus.com', '1234567', 'ADMIN', 1, NOW());
     ```
 
 ## 🛠️ Instalación y Ejecución
